@@ -14,7 +14,7 @@ const cors = require('cors');
 const router = require('./routes/router');
 
 const corsOptions = {
-    origin: 'https://melodic-puffpuff-8d23a8.netlify.app',
+    origin: 'https://verdant-sprite-6a61c6.netlify.app',
     credentials: true,
   };
 
