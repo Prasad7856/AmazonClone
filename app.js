@@ -14,7 +14,7 @@ const cors = require('cors');
 const router = require('./routes/router');
 
 const corsOptions = {
-    origin: 'https://amazoncloneweb.onrender.com',
+    origin: 'https://snazzy-kheer-f7a61a.netlify.app',
     credentials: true,
   };
 
