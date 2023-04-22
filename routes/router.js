@@ -23,7 +23,7 @@ router.get('/getproducts', async (req, resp) => {
 
     }
 
-    resp.setHeader('Access-Control-Allow-Origin', 'https://splendorous-toffee-170861.netlify.app');
+    resp.setHeader('Access-Control-Allow-Origin', 'https://melodic-puffpuff-8d23a8.netlify.app');
     resp.setHeader('Access-Control-Allow-Credentials', 'true');
 })
 
@@ -49,7 +49,7 @@ router.get('/getproductsone/:id', async (req, resp) => {
 
     }
 
-    resp.setHeader('Access-Control-Allow-Origin', 'https://splendorous-toffee-170861.netlify.app');
+    resp.setHeader('Access-Control-Allow-Origin', 'https://melodic-puffpuff-8d23a8.netlify.app');
     resp.setHeader('Access-Control-Allow-Credentials', 'true');
 })
 
@@ -90,7 +90,7 @@ router.post('/register', async (req, resp) => {
         resp.status(422).send(error);
     }
 
-    resp.setHeader('Access-Control-Allow-Origin', 'https://splendorous-toffee-170861.netlify.app');
+    resp.setHeader('Access-Control-Allow-Origin', 'https://melodic-puffpuff-8d23a8.netlify.app');
     resp.setHeader('Access-Control-Allow-Credentials', 'true');
 })
 
@@ -141,7 +141,7 @@ router.post("/login", async (req, resp) => {
 
     }
 
-    resp.setHeader('Access-Control-Allow-Origin', 'https://splendorous-toffee-170861.netlify.app');
+    resp.setHeader('Access-Control-Allow-Origin', 'https://melodic-puffpuff-8d23a8.netlify.app');
     resp.setHeader('Access-Control-Allow-Credentials', 'true');
 })
 
@@ -175,7 +175,7 @@ router.post('/addtocart/:id', authanticate, async (req, resp) => {
         resp.status(401).json({ error: "invalid user" });
     }
 
-    resp.setHeader('Access-Control-Allow-Origin', 'https://splendorous-toffee-170861.netlify.app');
+    resp.setHeader('Access-Control-Allow-Origin', 'https://melodic-puffpuff-8d23a8.netlify.app');
     resp.setHeader('Access-Control-Allow-Credentials', 'true');
 })
 
@@ -191,7 +191,7 @@ router.get('/cartdetails', authanticate, async (req, resp) => {
         console.log("error", +error)
     }
 
-    resp.setHeader('Access-Control-Allow-Origin', 'https://splendorous-toffee-170861.netlify.app');
+    resp.setHeader('Access-Control-Allow-Origin', 'https://melodic-puffpuff-8d23a8.netlify.app');
     resp.setHeader('Access-Control-Allow-Credentials', 'true');
 })
 
@@ -208,7 +208,7 @@ router.get('/validuser', authanticate, async (req, resp) => {
         console.log("error", +error)
     }
 
-    resp.setHeader('Access-Control-Allow-Origin', 'https://splendorous-toffee-170861.netlify.app');
+    resp.setHeader('Access-Control-Allow-Origin', 'https://melodic-puffpuff-8d23a8.netlify.app');
     resp.setHeader('Access-Control-Allow-Credentials', 'true');
 })
 
@@ -233,7 +233,7 @@ router.delete('/remove/:id', authanticate, async (req, resp) => {
         resp.status(400).json({ error: "error in removing" })
     }
 
-    resp.setHeader('Access-Control-Allow-Origin', 'https://splendorous-toffee-170861.netlify.app');
+    resp.setHeader('Access-Control-Allow-Origin', 'https://melodic-puffpuff-8d23a8.netlify.app');
     resp.setHeader('Access-Control-Allow-Credentials', 'true');
 
 })
@@ -259,7 +259,7 @@ router.get('/logout', authanticate, async (req, resp) => {
         console.log("error in logout");
     }
 
-    resp.setHeader('Access-Control-Allow-Origin', 'https://splendorous-toffee-170861.netlify.app');
+    resp.setHeader('Access-Control-Allow-Origin', 'https://melodic-puffpuff-8d23a8.netlify.app');
     resp.setHeader('Access-Control-Allow-Credentials', 'true');
 })
 
